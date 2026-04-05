@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UGC Ad Studio — AI-Powered Content Marketing for GlowNaturals</title>
+  <meta name="description" content="AI-powered UGC ad content generator for GlowNaturals skincare. Generate high-converting hooks, scripts, CTAs and captions for Instagram Reels, Ads & Shorts." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Ambient Background -->
+  <div class="ambient-bg">
+    <div class="ambient-orb ambient-orb--1"></div>
+    <div class="ambient-orb ambient-orb--2"></div>
+    <div class="ambient-orb ambient-orb--3"></div>
+    <div class="noise-overlay"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__container">
+      <a href="#" class="nav__logo">
+        <span class="nav__logo-icon">⚡</span>
+        <span class="nav__logo-text">UGC Ad Studio</span>
+      </a>
+      <div class="nav__links">
+        <a href="#brand" class="nav__link">Brand</a>
+        <a href="#hooks" class="nav__link">Hooks</a>
+        <a href="#scripts" class="nav__link">Scripts</a>
+        <a href="#prompts" class="nav__link">Prompts</a>
+        <a href="#generator" class="nav__link nav__link--cta">Generate</a>
+      </div>
+      <button class="nav__mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#brand" class="mobile-menu__link">Brand</a>
+    <a href="#hooks" class="mobile-menu__link">Hooks</a>
+    <a href="#scripts" class="mobile-menu__link">Scripts</a>
+    <a href="#prompts" class="mobile-menu__link">Prompts</a>
+    <a href="#generator" class="mobile-menu__link">Generate</a>
+  </div>
+
+  <!-- Hero Section -->
+  <header class="hero" id="hero">
+    <div class="hero__container">
+      <div class="hero__badge">
+        <span class="hero__badge-dot"></span>
+        AI-Powered UGC Content
+      </div>
+      <h1 class="hero__title">
+        Create <span class="hero__title-gradient">High-Converting</span><br />
+        UGC Ad Scripts in Seconds
+      </h1>
+      <p class="hero__subtitle">
+        Stop spending hours writing ad copy. Our AI prompt system generates authentic, 
+        scroll-stopping UGC content for Instagram Reels, Ads & Shorts — the same way 
+        real marketing agencies work.
+      </p>
+      <div class="hero__actions">
+        <a href="#generator" class="btn btn--primary">
+          <span>Start Generating</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#scripts" class="btn btn--secondary">
+          <span>View Ad Scripts</span>
+        </a>
+      </div>
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <span class="hero__stat-value">12+</span>
+          <span class="hero__stat-label">Hook Variants</span>
+        </div>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat">
+          <span class="hero__stat-value">6</span>
+          <span class="hero__stat-label">Full Ad Scripts</span>
+        </div>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat">
+          <span class="hero__stat-value">3</span>
+          <span class="hero__stat-label">Platforms</span>
+        </div>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat">
+          <span class="hero__stat-value">∞</span>
+          <span class="hero__stat-label">Reusable Prompts</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll-indicator">
+      <div class="hero__scroll-line"></div>
+    </div>
+  </header>
+
+  <!-- Brand Section -->
+  <section class="section brand" id="brand">
+    <div class="section__container">
+      <div class="section__header">
+        <span class="section__tag">The Brand</span>
+        <h2 class="section__title">Meet <span class="text-gradient">GlowNaturals</span></h2>
+        <p class="section__subtitle">A D2C natural skincare brand selling directly online — targeting millennials and Gen-Z who want clean, effective skincare without the chemical overload.</p>
+      </div>
+
+      <div class="brand__grid">
+        <div class="brand__card brand__card--main">
+          <div class="brand__card-icon">🌿</div>
+          <h3 class="brand__card-title">Brand Identity</h3>
+          <div class="brand__details">
+            <div class="brand__detail">
+              <span class="brand__detail-label">Name</span>
+              <span class="brand__detail-value">GlowNaturals</span>
+            </div>
+            <div class="brand__detail">
+              <span class="brand__detail-label">Category</span>
+              <span class="brand__detail-value">D2C Natural Skincare</span>
+            </div>
+            <div class="brand__detail">
+              <span class="brand__detail-label">Hero Product</span>
+              <span class="brand__detail-value">Vitamin C Glow Serum</span>
+            </div>
+            <div class="brand__detail">
+              <span class="brand__detail-label">Price</span>
+              <span class="brand__detail-value">₹599 / $14.99</span>
+            </div>
+            <div class="brand__detail">
+              <span class="brand__detail-label">Tone</span>
+              <span class="brand__detail-value">Friendly, authentic, relatable</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="brand__card">
+          <div class="brand__card-icon">🎯</div>
+          <h3 class="brand__card-title">Target Audience</h3>
+          <ul class="brand__list">
+            <li>Women aged 18-32</li>
+            <li>Active on Instagram & YouTube</li>
+            <li>Want clean, chemical-free skincare</li>
+            <li>Fed up with products that don't work</li>
+            <li>Price-conscious but value quality</li>
+            <li>Trust peer reviews over brand claims</li>
+          </ul>
+        </div>
+
+        <div class="brand__card">
+          <div class="brand__card-icon">💡</div>
+          <h3 class="brand__card-title">Key USPs</h3>
+          <ul class="brand__list">
+            <li>100% natural ingredients</li>
+            <li>Visible results in 14 days</li>
+            <li>No parabens, no sulfates</li>
+            <li>Dermatologist tested</li>
+            <li>30-day money-back guarantee</li>
+            <li>Cruelty-free & vegan</li>
+          </ul>
+        </div>
+
+        <div class="brand__card">
+          <div class="brand__card-icon">😤</div>
+          <h3 class="brand__card-title">Pain Points We Solve</h3>
+          <ul class="brand__list">
+            <li>Dull, uneven skin tone</li>
+            <li>Dark spots & hyperpigmentation</li>
+            <li>Products with hidden chemicals</li>
+            <li>Expensive skincare that doesn't deliver</li>
+            <li>Breakouts from harsh products</li>
+            <li>Lack of trust in brand claims</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hooks Section -->
+  <section class="section hooks" id="hooks">
+    <div class="section__container">
+      <div class="section__header">
+        <span class="section__tag">The Hooks</span>
+        <h2 class="section__title">12 Scroll-Stopping <span class="text-gradient">Hooks</span></h2>
+        <p class="section__subtitle">The first 3 seconds decide everything. Here are 12 hook variants organized by psychological trigger — each designed to stop the scroll and pull viewers in.</p>
+      </div>
+
+      <div class="hooks__filter">
+        <button class="hooks__filter-btn active" data-filter="all">All Hooks</button>
+        <button class="hooks__filter-btn" data-filter="curiosity">Curiosity</button>
+        <button class="hooks__filter-btn" data-filter="pain">Pain Point</button>
+        <button class="hooks__filter-btn" data-filter="social">Social Proof</button>
+        <button class="hooks__filter-btn" data-filter="shock">Shock Value</button>
+      </div>
+
+      <div class="hooks__grid" id="hooksGrid">
+        <!-- Hooks will be injected via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Scripts Section -->
+  <section class="section scripts" id="scripts">
+    <div class="section__container">
+      <div class="section__header">
+        <span class="section__tag">The Scripts</span>
+        <h2 class="section__title">Full UGC <span class="text-gradient">Ad Scripts</span></h2>
+        <p class="section__subtitle">Complete, ready-to-shoot scripts following the proven Problem → Agitation → Solution → CTA framework. Each script includes timing, visual cues, and platform optimization.</p>
+      </div>
+
+      <div class="scripts__tabs">
+        <button class="scripts__tab active" data-tab="0">
+          <span class="scripts__tab-num">01</span>
+          <span class="scripts__tab-title">The Honest Review</span>
+        </button>
+        <button class="scripts__tab" data-tab="1">
+          <span class="scripts__tab-num">02</span>
+          <span class="scripts__tab-title">The Before/After</span>
+        </button>
+        <button class="scripts__tab" data-tab="2">
+          <span class="scripts__tab-num">03</span>
+          <span class="scripts__tab-title">The Myth Buster</span>
+        </button>
+        <button class="scripts__tab" data-tab="3">
+          <span class="scripts__tab-num">04</span>
+          <span class="scripts__tab-title">The GRWM</span>
+        </button>
+        <button class="scripts__tab" data-tab="4">
+          <span class="scripts__tab-num">05</span>
+          <span class="scripts__tab-title">The Story Arc</span>
+        </button>
+        <button class="scripts__tab" data-tab="5">
+          <span class="scripts__tab-num">06</span>
+          <span class="scripts__tab-title">The Quick Tips</span>
+        </button>
+      </div>
+
+      <div class="scripts__content" id="scriptsContent">
+        <!-- Script content injected via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CTAs Section -->
+  <section class="section ctas" id="ctas">
+    <div class="section__container">
+      <div class="section__header">
+        <span class="section__tag">Calls to Action</span>
+        <h2 class="section__title">Platform-Specific <span class="text-gradient">CTAs & Captions</span></h2>
+        <p class="section__subtitle">Tailored CTAs and captions optimized for each platform's unique audience behavior and algorithm preferences.</p>
+      </div>
+
+      <div class="ctas__grid">
+        <div class="ctas__platform">
+          <div class="ctas__platform-header">
+            <div class="ctas__platform-icon">📸</div>
+            <div>
+              <h3 class="ctas__platform-name">Instagram Reels</h3>
+              <span class="ctas__platform-meta">15-60 seconds • Vertical • Sound On</span>
+            </div>
+          </div>
+          <div class="ctas__list">
+            <div class="ctas__item">
+              <span class="ctas__item-type">CTA</span>
+              <p>"Link in bio for 20% off — today only 💛"</p>
+            </div>
+            <div class="ctas__item">
+              <span class="ctas__item-type">CTA</span>
+              <p>"Comment 'GLOW' and I'll DM you the link 🌟"</p>
+            </div>
+            <div class="ctas__item">
+              <span class="ctas__item-type">CTA</span>
+              <p>"Save this for your next skincare haul 🛒"</p>
+            </div>
+            <div class="ctas__item">
+              <span class="ctas__item-type">Caption</span>
+              <p>I was THIS close to giving up on skincare 😭 Then I found this serum and honestly? My skin hasn't looked this good since I was 16. No filter, no editing — just 2 weeks of GlowNaturals ✨🌿 #skincare #glowup #naturalbeauty #vitaminc</p>
+            </div>
+            <div class="ctas__item">
+              <span class="ctas__item-type">Caption</span>
+              <p>POV: You finally found a serum that actually works AND doesn't have a million chemicals in it 🧪❌ Real talk — if you have dull skin, dark spots, or uneven tone, you NEED to try this 👇 #skincareroutine #cleanskincare #glownaturals</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="ctas__platform">
+          <div class="ctas__platform-header">
+            <div class="ctas__platform-icon">🎬</div>
+            <div>
+              <h3 class="ctas__platform-name">YouTube Shorts</h3>
+              <span class="ctas__platform-meta">15-60 seconds • Vertical • SEO-driven</span>
+            </div>
+          </div>
+          <div class="ctas__list">
+            <div class="ctas__item">
+              <span class="ctas__item-type">CTA</span>
+              <p>"Click the link in description — trust me, your skin will thank you 🙏"</p>
+            </div>
+            <div class="ctas__item">
+              <span class="ctas__item-type">CTA</span>
+              <p>"Subscribe for more skincare finds that actually work!"</p>
+            </div>
+            <div class="ctas__item">
+              <span class="ctas__item-type">CTA</span>
+              <p>"Drop a 🔥 if you want a full skincare routine video!"</p>
+            </div>
+            <div class="ctas__item">
+              <span class="ctas__item-type">Caption</span>
+              <p>This ₹599 serum outperformed my ₹3000 one 😱 | GlowNaturals Vitamin C Serum honest review | Natural skincare that actually works #skincare #shorts #vitaminc</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="ctas__platform">
+          <div class="ctas__platform-header">
+            <div class="ctas__platform-icon">📢</div>
+            <div>
+              <h3 class="ctas__platform-name">Paid Ads (Meta/IG)</h3>
+              <span class="ctas__platform-meta">15-30 seconds • Direct Response • Conversion</span>
+            </div>
+          </div>
+          <div class="ctas__list">
+            <div class="ctas__item">
+              <span class="ctas__item-type">CTA</span>
+              <p>"Shop now — 30-day money-back guarantee. Zero risk."</p>
+            </div>
+            <div class="ctas__item">
+              <span class="ctas__item-type">CTA</span>
+              <p>"Try it for ₹599 — if you don't see results in 14 days, we'll refund you. No questions."</p>
+            </div>
+            <div class="ctas__item">
+              <span class="ctas__item-type">CTA</span>
+              <p>"Get your glow-up kit before we sell out again 🌿"</p>
+            </div>
+            <div class="ctas__item">
+              <span class="ctas__item-type">Primary Text</span>
+              <p>Over 50,000 women switched to GlowNaturals this month. Here's why: ✅ 100% natural ingredients ✅ Visible results in 14 days ✅ No parabens, sulfates, or toxic chemicals ✅ Dermatologist tested Try our bestselling Vitamin C Glow Serum for just ₹599. 30-day money-back guarantee — zero risk.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Prompts Section -->
+  <section class="section prompts" id="prompts">
+    <div class="section__container">
+      <div class="section__header">
+        <span class="section__tag">The System</span>
+        <h2 class="section__title">Reusable <span class="text-gradient">Prompt Templates</span></h2>
+        <p class="section__subtitle">The backbone of this system — structured, reusable prompts that can be adapted for any brand, product, or platform. Copy, customize, generate.</p>
+      </div>
+
+      <div class="prompts__grid" id="promptsGrid">
+        <!-- Prompts injected via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Generator Section -->
+  <section class="section generator" id="generator">
+    <div class="section__container">
+      <div class="section__header">
+        <span class="section__tag">Live Generator</span>
+        <h2 class="section__title">Build Your Own <span class="text-gradient">UGC Ad</span></h2>
+        <p class="section__subtitle">Fill in the details and watch the prompt system generate a complete UGC ad script in real-time.</p>
+      </div>
+
+      <div class="generator__layout">
+        <div class="generator__form">
+          <div class="generator__field">
+            <label for="genBrand">Brand Name</label>
+            <input type="text" id="genBrand" placeholder="e.g., GlowNaturals" value="GlowNaturals" />
+          </div>
+          <div class="generator__field">
+            <label for="genProduct">Product Name</label>
+            <input type="text" id="genProduct" placeholder="e.g., Vitamin C Glow Serum" value="Vitamin C Glow Serum" />
+          </div>
+          <div class="generator__field">
+            <label for="genPrice">Price</label>
+            <input type="text" id="genPrice" placeholder="e.g., ₹599" value="₹599" />
+          </div>
+          <div class="generator__field">
+            <label for="genPain">Main Pain Point</label>
+            <input type="text" id="genPain" placeholder="e.g., Dull, uneven skin tone" value="Dull, uneven skin tone" />
+          </div>
+          <div class="generator__field">
+            <label for="genUSP">Key USP</label>
+            <input type="text" id="genUSP" placeholder="e.g., 100% natural, results in 14 days" value="100% natural, visible results in 14 days" />
+          </div>
+          <div class="generator__field">
+            <label for="genPlatform">Platform</label>
+            <select id="genPlatform">
+              <option value="instagram">Instagram Reels</option>
+              <option value="youtube">YouTube Shorts</option>
+              <option value="paid">Paid Ads (Meta)</option>
+            </select>
+          </div>
+          <div class="generator__field">
+            <label for="genTone">Tone</label>
+            <select id="genTone">
+              <option value="friendly">Friendly & Relatable</option>
+              <option value="excited">Excited & Energetic</option>
+              <option value="calm">Calm & Informative</option>
+              <option value="bold">Bold & Confident</option>
+              <option value="storytelling">Storytelling</option>
+            </select>
+          </div>
+          <div class="generator__field">
+            <label for="genFormat">Script Format</label>
+            <select id="genFormat">
+              <option value="honest-review">Honest Review</option>
+              <option value="before-after">Before/After</option>
+              <option value="myth-buster">Myth Buster</option>
+              <option value="grwm">GRWM</option>
+              <option value="story">Story Arc</option>
+              <option value="tips">Quick Tips</option>
+            </select>
+          </div>
+          <button class="btn btn--primary btn--full" id="generateBtn">
+            <span>⚡ Generate UGC Ad Script</span>
+          </button>
+        </div>
+
+        <div class="generator__output">
+          <div class="generator__output-header">
+            <span class="generator__output-title">Generated Output</span>
+            <button class="generator__copy-btn" id="copyBtn" title="Copy to clipboard">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+              <span>Copy</span>
+            </button>
+          </div>
+          <div class="generator__output-content" id="outputContent">
+            <div class="generator__placeholder">
+              <div class="generator__placeholder-icon">🎬</div>
+              <p>Click "Generate" to create your UGC ad script</p>
+              <p class="generator__placeholder-sub">Fill in the brand details on the left and hit generate</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ad Framework Section -->
+  <section class="section framework" id="framework">
+    <div class="section__container">
+      <div class="section__header">
+        <span class="section__tag">The Framework</span>
+        <h2 class="section__title">Proven UGC <span class="text-gradient">Ad Framework</span></h2>
+        <p class="section__subtitle">Every high-converting UGC ad follows a proven psychological structure. Here's the exact framework we use.</p>
+      </div>
+
+      <div class="framework__timeline">
+        <div class="framework__step">
+          <div class="framework__step-number">01</div>
+          <div class="framework__step-content">
+            <h3>Hook <span class="framework__time">0-3 seconds</span></h3>
+            <p>Stop the scroll. Use a curiosity gap, bold claim, or pain point that makes the viewer think "wait, what?" The hook determines 80% of your ad's performance.</p>
+            <div class="framework__example">"I was about to throw this serum away… then I saw my skin the next morning"</div>
+          </div>
+        </div>
+        <div class="framework__step">
+          <div class="framework__step-number">02</div>
+          <div class="framework__step-content">
+            <h3>Problem <span class="framework__time">3-8 seconds</span></h3>
+            <p>Agitate the pain point. Make the viewer feel seen. Describe their frustration in their own words — not marketing speak.</p>
+            <div class="framework__example">"My skin was so dull and patchy, I stopped going out without foundation. I tried everything — expensive serums, DIY masks, you name it."</div>
+          </div>
+        </div>
+        <div class="framework__step">
+          <div class="framework__step-number">03</div>
+          <div class="framework__step-content">
+            <h3>Solution <span class="framework__time">8-20 seconds</span></h3>
+            <p>Introduce the product naturally — like you're telling a friend about a discovery. Show, don't sell. Demonstrate the product in use.</p>
+            <div class="framework__example">"Then my friend told me about this Vitamin C serum by GlowNaturals. It's all natural, no chemicals — and it literally changed my skin in 2 weeks."</div>
+          </div>
+        </div>
+        <div class="framework__step">
+          <div class="framework__step-number">04</div>
+          <div class="framework__step-content">
+            <h3>Proof <span class="framework__time">20-25 seconds</span></h3>
+            <p>Show the results. Before/after, close-up shots, testimonials, or social proof. Make the transformation undeniable.</p>
+            <div class="framework__example">[Show close-up of glowing skin] "Look at this — no filter, no editing. This is literally just 14 days of using it every night."</div>
+          </div>
+        </div>
+        <div class="framework__step">
+          <div class="framework__step-number">05</div>
+          <div class="framework__step-content">
+            <h3>CTA <span class="framework__time">25-30 seconds</span></h3>
+            <p>Clear, single action. Create urgency without being pushy. Make it easy — link, DM, comment. Remove friction.</p>
+            <div class="framework__example">"Link in bio for 20% off — but honestly, at ₹599, it's already a steal. Try it. Your skin will thank you 💛"</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <span class="footer__logo">⚡ UGC Ad Studio</span>
+          <p class="footer__tagline">AI-powered UGC content marketing — built for brands that want real results from real-feeling ads.</p>
+        </div>
+        <div class="footer__links">
+          <div class="footer__col">
+            <h4>Content</h4>
+            <a href="#brand">Brand Profile</a>
+            <a href="#hooks">Hook Library</a>
+            <a href="#scripts">Ad Scripts</a>
+            <a href="#ctas">CTAs & Captions</a>
+          </div>
+          <div class="footer__col">
+            <h4>System</h4>
+            <a href="#prompts">Prompt Templates</a>
+            <a href="#generator">Live Generator</a>
+            <a href="#framework">Ad Framework</a>
+          </div>
+          <div class="footer__col">
+            <h4>Resources</h4>
+            <a href="https://chat.openai.com" target="_blank">ChatGPT</a>
+            <a href="https://claude.ai" target="_blank">Claude AI</a>
+            <a href="https://gemini.google.com" target="_blank">Google Gemini</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 UGC Ad Studio — Built with AI Prompt Engineering</p>
+        <p>Product: <strong>GlowNaturals</strong> (D2C Skincare Brand)</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
